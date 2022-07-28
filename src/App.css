@@ -12,7 +12,7 @@ ul {
     padding: 0;
 }
 
-h1, p {
+h1, p, ul {
     margin: 0;
 }
 
@@ -22,4 +22,26 @@ h1, p {
     padding: 0 0 30px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.header__container {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.header__nav {
+    width: 25%;
+}
+
+.section-hero__container {
+    text-align: center;
 }
