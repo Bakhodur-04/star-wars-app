@@ -25,9 +25,10 @@ h1, p, ul {
 }
 
 .header__container {
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .header__logo {
@@ -42,6 +43,49 @@ h1, p, ul {
     width: 25%;
 }
 
+/*main*/
+
 .section-hero__container {
     text-align: center;
+}
+
+.section-hero__main-title {
+    color: rgb(0, 102, 255);
+}
+
+.section-content__loader-title {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    text-align: center;
+}
+
+.section-content__list-pagination {
+    display: flex;
+}
+
+.section-content__button-page {
+    border: 2px rgb(0, 102, 255) solid;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(0, 102, 255);
+    background-color: white;
+}
+
+.section-content__button-page_active {
+    color: white;
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.section-content__button-page:hover {
+    background-color: rgb(0, 102, 255);
+    border-color: rgb(0, 102, 255);
+    color: white;
 }
