@@ -7,7 +7,11 @@ const Card = ({name, height, mass, homeworld, id, src}) => {
   return (
     <li id={id} className={styles.card}>
       <img className={styles.cardImg} 
-        src={`https://starwars-visualguide.com/assets/img/characters/${(id+1)+((src-1)*10)}.jpg`} 
+        src={
+          ((id+1)+((src-1)*10)) < 17
+            ? `https://starwars-visualguide.com/assets/img/characters/${(id+1)+((src-1)*10)}.jpg`
+            : `https://starwars-visualguide.com/assets/img/characters/${(id+1)+((src-1)*10)+1}.jpg`
+        } 
         alt={name}/>
       <p className={styles.info}>
         <span className={styles.cardName}>{name}</span>
