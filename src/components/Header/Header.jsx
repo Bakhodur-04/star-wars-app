@@ -12,11 +12,14 @@ const Header = () => {
         
         <nav className="header__nav">
           <ul className={styles.header__list}>
-            <li key='22' className="header__item">
+            <li className="header__item">
               <a href='/'>Главная</a>
             </li>
-            <li key='23' className="header__item">
+            <li className="header__item">
               <a href='/'>Любимые герои</a>
+            </li>
+            <li className="header__item">
+              <a href='/'>Поиск</a>
             </li>
           </ul>
         </nav>

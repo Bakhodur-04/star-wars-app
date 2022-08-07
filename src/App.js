@@ -32,20 +32,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main hero={hero} totalCount={totalCount} src={page}/>
-
-      <div className="container">
-        <ul className="section-content__list-pagination">
-          {pageArray.map(elem => 
-            <li key={elem} className="section-content__item-pagination">
-              <button id={elem} onClick={ () => changePage(elem)} 
-                className={page === elem ? "section-content__button-page section-content__button-page_active"  : "section-content__button-page"}>
-                  {elem}
-              </button>
-            </li>
-          )}
-        </ul>
-      </div>
+      <Main hero={hero} totalCount={totalCount} src={page} pageArray={pageArray} changePage={changePage} page={page}/>
     </div>
   );
 }

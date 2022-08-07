@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     text-align: start;
+    background-color: white;
 }
 
 .card:not(:nth-child(5n)) {
@@ -17,11 +18,38 @@
     margin-bottom: 30px;
 }
 
+.infoHeart {
+    display: flex;
+    margin-top: 12px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.link {
+    height: 25px;
+}
+
+.heart {
+    content: "";
+    display: block; 
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.heart:hover { 
+    stroke: #0051ff; /* цвет обводки */
+    fill: #0051ff;
+}
+
+.heart:active { 
+    stroke: blue; /* цвет обводки */
+    fill: blue;
+}
+
 .info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 12px;
 }
 
 .cardImg {
